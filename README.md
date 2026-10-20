@@ -103,11 +103,14 @@ URL, instances and queries in it. To ship a different default, edit
 | `StorageDaysWarn`, `StorageDaysAlarm` | storage rows turn amber / red when the days left fall under these |
 
 Every query must return exactly one sample. A load or free-space value whose query fails, returns
-no series, or whose source is older than `StaleSeconds` is drawn as `--` in amber (the number next
-to a load bar takes the color of the bar). The trend columns (lowest free, growth per day, days
-left) come from the last trend refresh: they are queried every `TrendRefreshSeconds` and keep
-their last values while the query API cannot be reached. When no query reaches the API the
-header says so. Storage rows are judged on absolute free space and days left, never on percent
+no series, or whose source is older than `StaleSeconds` is drawn as `--` in amber; the number
+next to a load bar is drawn in the color of the bar's percentage text, also when it is missing.
+The trend values (lowest free of 7 days, growth per day over 1 and 7 days) are queried every
+`TrendRefreshSeconds` and cached; a trend refresh that cannot reach the API keeps the cached ones.
+Each frame combines them with the current free space: lowest free is the lower of the 7-day
+minimum and the current free space, days left divide the current free space by the steeper
+positive growth. When the current free space is unknown, the trend columns of that row are empty
+too. When no query reaches the API the header says so. Storage rows are judged on absolute free space and days left, never on percent
 used.
 
 ### Known issues
