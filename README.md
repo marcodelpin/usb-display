@@ -59,12 +59,13 @@ Zip the `publish` folder, then on the machine the panel is plugged into:
 powershell -ExecutionPolicy Bypass -File scripts\install-tray.ps1 -Zip C:\path\to\publish.zip
 ```
 
-The script stops a running tray, extracts the zip to `%LOCALAPPDATA%\Programs\usb-display\`,
+The script stops this user's running tray (another user's tray on the same machine is left
+alone), extracts the zip to `%LOCALAPPDATA%\Programs\usb-display\`,
 sets the autostart value `UsbDisplayTray` under `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
 and starts the tray. A config that still equals the default of the previous build was never
 edited: it is moved aside so that the new build writes its own default. An edited config is kept.
 
-`scripts\uninstall-tray.ps1` stops the tray, removes the autostart value and moves the install
+`scripts\uninstall-tray.ps1` stops this user's tray, removes the autostart value and moves the install
 folder aside (rename it back to restore). Config and state stay.
 
 ## Tray
@@ -75,7 +76,8 @@ frame, or the current error. When the panel is unplugged the tray keeps running 
 once the panel is back.
 
 State files in `%LOCALAPPDATA%\usb-display\`: `status.json`, `last-frame.png` (the last frame
-drawn) and `default-config.json` (the default of the installed build).
+rendered, also when the panel was absent and nothing was sent) and `default-config.json` (the
+default of the installed build).
 
 ## Configuration
 
@@ -91,7 +93,7 @@ URL, instances and queries in it. To ship a different default, edit
 | `RefreshSeconds` | frame interval, at least 2 |
 | `TrendRefreshSeconds` | interval of the 7-day trend queries |
 | `StaleSeconds` | a value whose source is older than this is drawn as `--` |
-| `Orientation` | 0 portrait, 1 reverse portrait, 2 landscape (480x320), 3 reverse landscape |
+| `Orientation` | 2 landscape (480x320) or 3 reverse landscape: the metrics frame is laid out for 480x320. 0 portrait and 1 reverse portrait (320x480) suit only `usbdisp test` and `image` |
 | `Brightness` | 0-100 |
 | `Title` | header text |
 | `Sources` | named sources, each with an `AgeQuery` that returns the age in seconds of its newest sample |
@@ -100,10 +102,18 @@ URL, instances and queries in it. To ship a different default, edit
 | `Storage` | disk rows: `Label`, `Source`, `SizeQuery`, `UsedQuery` (bytes), optional `WarnFreeBytes` (an absolute floor that forces red) |
 | `StorageDaysWarn`, `StorageDaysAlarm` | storage rows turn amber / red when the days left fall under these |
 
-Every query must return exactly one sample. A value whose query fails, returns no series, or
-whose source is older than `StaleSeconds` is drawn as `--` in amber; when the query API cannot be
-reached the header says so. Storage rows are judged on absolute free space and days left, never
-on percent used.
+Every query must return exactly one sample. A load or free-space value whose query fails, returns
+no series, or whose source is older than `StaleSeconds` is drawn as `--` in amber (the number next
+to a load bar takes the color of the bar). The trend columns (lowest free, growth per day, days
+left) come from the last trend refresh: they are queried every `TrendRefreshSeconds` and keep
+their last values while the query API cannot be reached. When no query reaches the API the
+header says so. Storage rows are judged on absolute free space and days left, never on percent
+used.
+
+### Known issues
+
+- A blank query in the config counts as an answer, so while one is there the header does not
+  report an unreachable query API. Do not leave a query empty.
 
 ## Command line
 
@@ -122,7 +132,8 @@ usbdisp detect | on | off | brightness <0-100> | orientation [n] | test [n] | im
 
 Options: `--port COMn` (skip detection), `--dry-run [--out <file>]` (write the bytes to a file
 instead of the port), `--png <path>` (`frame`: also save the rendered frame). The tray redraws
-every `RefreshSeconds`: pause it from its menu to keep what the command line draws.
+every `RefreshSeconds`: pause it from its menu first to keep what the command line draws (a
+frame the tray was already collecting when you paused can still be drawn once).
 
 ## License
 

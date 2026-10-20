@@ -46,7 +46,23 @@ public class GoldenMasterTests
         }
     }
 
+    /// <summary>The dump is culture-neutral: record ToString() formats numbers with the current
+    /// culture (1,5 under it-IT), so the whole dump runs under the invariant culture.</summary>
     internal static string Dump()
+    {
+        var saved = CultureInfo.CurrentCulture;
+        CultureInfo.CurrentCulture = Inv;
+        try
+        {
+            return DumpCore();
+        }
+        finally
+        {
+            CultureInfo.CurrentCulture = saved;
+        }
+    }
+
+    private static string DumpCore()
     {
         var sb = new StringBuilder();
         void L(string s) => sb.Append(s).Append('\n');

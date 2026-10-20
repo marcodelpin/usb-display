@@ -1,3 +1,5 @@
 # GoldenMasterTests compares the golden file byte for byte with a dump built with LF line ends:
 # keep it LF on every OS, also where core.autocrlf=true.
 tests/UsbDisplay.Tests/golden/*.txt text eol=lf
+# Shell scripts: a CR at a line end breaks bash ("set: pipefail\r: invalid option name").
+*.sh text eol=lf

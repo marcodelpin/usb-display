@@ -7,7 +7,9 @@ $dir = Join-Path (Join-Path $env:LOCALAPPDATA 'Programs') 'usb-display'
 $exe = Join-Path $dir 'UsbDisplayTray.exe'
 $run = 'HKCU:/Software/Microsoft/Windows/CurrentVersion/Run'
 
-$old = @(Get-Process -Name UsbDisplayTray -ErrorAction SilentlyContinue)
+# Only the tray of this install: another user's tray runs from their own %LOCALAPPDATA% (its Path is
+# not readable without admin rights) and is not ours to stop.
+$old = @(Get-Process -Name UsbDisplayTray -ErrorAction SilentlyContinue | Where-Object { $_.Path -eq $exe })
 foreach ($p in $old) { Stop-Process -Id $p.Id -Force }
 if ($old.Count) { Start-Sleep -Milliseconds 800 }
 "stopped {0} running instance(s)" -f $old.Count
@@ -34,7 +36,7 @@ Set-ItemProperty -Path $run -Name 'UsbDisplayTray' -Value ('"{0}"' -f $exe)
 Start-Process -FilePath $exe -WorkingDirectory $dir
 Start-Sleep -Seconds 4
 
-$p = Get-Process -Name UsbDisplayTray -ErrorAction SilentlyContinue | Select-Object -First 1
+$p = Get-Process -Name UsbDisplayTray -ErrorAction SilentlyContinue | Where-Object { $_.Path -eq $exe } | Select-Object -First 1
 "installed {0} version={1}" -f $dir, (Get-Item -LiteralPath $exe).VersionInfo.FileVersion
 "tray={0}" -f $(if ($p) { 'running pid=' + $p.Id + ' session=' + $p.SessionId } else { 'absent' })
 Remove-Item -LiteralPath $Zip -ErrorAction SilentlyContinue
