@@ -1,0 +1,59 @@
+{
+  "VmUrl": "http://localhost:8428",
+  "RefreshSeconds": 10,
+  "TrendRefreshSeconds": 300,
+  "StaleSeconds": 120,
+  "Orientation": 2,
+  "Brightness": 100,
+  "Title": "localhost",
+  "StorageDaysWarn": 30,
+  "StorageDaysAlarm": 7,
+  "Sources": [
+    { "Name": "node", "AgeQuery": "time() - max(timestamp(node_load1{instance=\"localhost:9100\"}))" }
+  ],
+  "Load": [
+    {
+      "Label": "CPU",
+      "Source": "node",
+      "Query": "100 * (1 - avg(rate(node_cpu_seconds_total{instance=\"localhost:9100\",mode=\"idle\"}[1m])))",
+      "ExtraLabel": "ld",
+      "ExtraQuery": "max(node_load1{instance=\"localhost:9100\"})",
+      "WarnAt": 70,
+      "AlarmAt": 90
+    },
+    {
+      "Label": "RAM",
+      "Source": "node",
+      "Query": "100 * (1 - max(node_memory_MemAvailable_bytes{instance=\"localhost:9100\"}) / max(node_memory_MemTotal_bytes{instance=\"localhost:9100\"}))",
+      "WarnAt": 80,
+      "AlarmAt": 95
+    },
+    {
+      "Label": "IO wait",
+      "Source": "node",
+      "Query": "100 * avg(rate(node_cpu_seconds_total{instance=\"localhost:9100\",mode=\"iowait\"}[1m]))",
+      "WarnAt": 20,
+      "AlarmAt": 50
+    },
+    {
+      "Label": "Disk IO",
+      "Source": "node",
+      "Query": "100 * max(rate(node_disk_io_time_seconds_total{instance=\"localhost:9100\"}[1m]))",
+      "WarnAt": 70,
+      "AlarmAt": 90
+    }
+  ],
+  "Trends": {
+    "MinFree": "min_over_time((({size}) - ({used}))[7d:1h])",
+    "Growth1d": "86400 * deriv(({used})[1d:10m])",
+    "Growth7d": "86400 * deriv(({used})[7d:1h])"
+  },
+  "Storage": [
+    {
+      "Label": "/",
+      "Source": "node",
+      "SizeQuery": "max(node_filesystem_size_bytes{instance=\"localhost:9100\",mountpoint=\"/\"})",
+      "UsedQuery": "max(node_filesystem_size_bytes{instance=\"localhost:9100\",mountpoint=\"/\"}) - max(node_filesystem_avail_bytes{instance=\"localhost:9100\",mountpoint=\"/\"})"
+    }
+  ]
+}

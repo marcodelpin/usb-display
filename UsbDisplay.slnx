@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/usbdisp/usbdisp.csproj" />
+    <Project Path="src/UsbDisplay.Core/UsbDisplay.Core.csproj" />
+    <Project Path="src/UsbDisplay.Win/UsbDisplay.Win.csproj" />
+    <Project Path="src/UsbDisplayTray/UsbDisplayTray.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/UsbDisplay.Tests/UsbDisplay.Tests.csproj" />
+  </Folder>
+</Solution>

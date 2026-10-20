@@ -1,0 +1,1360 @@
+== protocol
+header 0 0 1023 341 = 00 00 0F FD 55 C5
+header 0 1 1023 340 = 00 00 1F FD 54 C5
+header 0 2 1023 343 = 00 00 2F FD 57 C5
+header 0 3 1023 342 = 00 00 3F FD 56 C5
+header 0 63 1023 362 = 00 03 FF FD 6A C5
+header 0 64 1023 277 = 00 04 0F FD 15 C5
+header 0 255 1023 426 = 00 0F FF FD AA C5
+header 0 256 1023 85 = 00 10 0F FC 55 C5
+header 0 319 1023 106 = 00 13 FF FC 6A C5
+header 0 320 1023 21 = 00 14 0F FC 15 C5
+header 0 479 1023 138 = 00 1D FF FC 8A C5
+header 0 511 1023 170 = 00 1F FF FC AA C5
+header 0 1023 1023 682 = 00 3F FF FE AA C5
+header 1 0 1022 341 = 00 40 0F F9 55 C5
+header 1 1 1022 340 = 00 40 1F F9 54 C5
+header 1 2 1022 343 = 00 40 2F F9 57 C5
+header 1 3 1022 342 = 00 40 3F F9 56 C5
+header 1 63 1022 362 = 00 43 FF F9 6A C5
+header 1 64 1022 277 = 00 44 0F F9 15 C5
+header 1 255 1022 426 = 00 4F FF F9 AA C5
+header 1 256 1022 85 = 00 50 0F F8 55 C5
+header 1 319 1022 106 = 00 53 FF F8 6A C5
+header 1 320 1022 21 = 00 54 0F F8 15 C5
+header 1 479 1022 138 = 00 5D FF F8 8A C5
+header 1 511 1022 170 = 00 5F FF F8 AA C5
+header 1 1023 1022 682 = 00 7F FF FA AA C5
+header 2 0 1021 341 = 00 80 0F F5 55 C5
+header 2 1 1021 340 = 00 80 1F F5 54 C5
+header 2 2 1021 343 = 00 80 2F F5 57 C5
+header 2 3 1021 342 = 00 80 3F F5 56 C5
+header 2 63 1021 362 = 00 83 FF F5 6A C5
+header 2 64 1021 277 = 00 84 0F F5 15 C5
+header 2 255 1021 426 = 00 8F FF F5 AA C5
+header 2 256 1021 85 = 00 90 0F F4 55 C5
+header 2 319 1021 106 = 00 93 FF F4 6A C5
+header 2 320 1021 21 = 00 94 0F F4 15 C5
+header 2 479 1021 138 = 00 9D FF F4 8A C5
+header 2 511 1021 170 = 00 9F FF F4 AA C5
+header 2 1023 1021 682 = 00 BF FF F6 AA C5
+header 3 0 1020 341 = 00 C0 0F F1 55 C5
+header 3 1 1020 340 = 00 C0 1F F1 54 C5
+header 3 2 1020 343 = 00 C0 2F F1 57 C5
+header 3 3 1020 342 = 00 C0 3F F1 56 C5
+header 3 63 1020 362 = 00 C3 FF F1 6A C5
+header 3 64 1020 277 = 00 C4 0F F1 15 C5
+header 3 255 1020 426 = 00 CF FF F1 AA C5
+header 3 256 1020 85 = 00 D0 0F F0 55 C5
+header 3 319 1020 106 = 00 D3 FF F0 6A C5
+header 3 320 1020 21 = 00 D4 0F F0 15 C5
+header 3 479 1020 138 = 00 DD FF F0 8A C5
+header 3 511 1020 170 = 00 DF FF F0 AA C5
+header 3 1023 1020 682 = 00 FF FF F2 AA C5
+header 63 0 960 341 = 0F C0 0F 01 55 C5
+header 63 1 960 340 = 0F C0 1F 01 54 C5
+header 63 2 960 343 = 0F C0 2F 01 57 C5
+header 63 3 960 342 = 0F C0 3F 01 56 C5
+header 63 63 960 362 = 0F C3 FF 01 6A C5
+header 63 64 960 277 = 0F C4 0F 01 15 C5
+header 63 255 960 426 = 0F CF FF 01 AA C5
+header 63 256 960 85 = 0F D0 0F 00 55 C5
+header 63 319 960 106 = 0F D3 FF 00 6A C5
+header 63 320 960 21 = 0F D4 0F 00 15 C5
+header 63 479 960 138 = 0F DD FF 00 8A C5
+header 63 511 960 170 = 0F DF FF 00 AA C5
+header 63 1023 960 682 = 0F FF FF 02 AA C5
+header 64 0 959 341 = 10 00 0E FD 55 C5
+header 64 1 959 340 = 10 00 1E FD 54 C5
+header 64 2 959 343 = 10 00 2E FD 57 C5
+header 64 3 959 342 = 10 00 3E FD 56 C5
+header 64 63 959 362 = 10 03 FE FD 6A C5
+header 64 64 959 277 = 10 04 0E FD 15 C5
+header 64 255 959 426 = 10 0F FE FD AA C5
+header 64 256 959 85 = 10 10 0E FC 55 C5
+header 64 319 959 106 = 10 13 FE FC 6A C5
+header 64 320 959 21 = 10 14 0E FC 15 C5
+header 64 479 959 138 = 10 1D FE FC 8A C5
+header 64 511 959 170 = 10 1F FE FC AA C5
+header 64 1023 959 682 = 10 3F FE FE AA C5
+header 255 0 768 341 = 3F C0 0C 01 55 C5
+header 255 1 768 340 = 3F C0 1C 01 54 C5
+header 255 2 768 343 = 3F C0 2C 01 57 C5
+header 255 3 768 342 = 3F C0 3C 01 56 C5
+header 255 63 768 362 = 3F C3 FC 01 6A C5
+header 255 64 768 277 = 3F C4 0C 01 15 C5
+header 255 255 768 426 = 3F CF FC 01 AA C5
+header 255 256 768 85 = 3F D0 0C 00 55 C5
+header 255 319 768 106 = 3F D3 FC 00 6A C5
+header 255 320 768 21 = 3F D4 0C 00 15 C5
+header 255 479 768 138 = 3F DD FC 00 8A C5
+header 255 511 768 170 = 3F DF FC 00 AA C5
+header 255 1023 768 682 = 3F FF FC 02 AA C5
+header 256 0 767 341 = 40 00 0B FD 55 C5
+header 256 1 767 340 = 40 00 1B FD 54 C5
+header 256 2 767 343 = 40 00 2B FD 57 C5
+header 256 3 767 342 = 40 00 3B FD 56 C5
+header 256 63 767 362 = 40 03 FB FD 6A C5
+header 256 64 767 277 = 40 04 0B FD 15 C5
+header 256 255 767 426 = 40 0F FB FD AA C5
+header 256 256 767 85 = 40 10 0B FC 55 C5
+header 256 319 767 106 = 40 13 FB FC 6A C5
+header 256 320 767 21 = 40 14 0B FC 15 C5
+header 256 479 767 138 = 40 1D FB FC 8A C5
+header 256 511 767 170 = 40 1F FB FC AA C5
+header 256 1023 767 682 = 40 3F FB FE AA C5
+header 319 0 704 341 = 4F C0 0B 01 55 C5
+header 319 1 704 340 = 4F C0 1B 01 54 C5
+header 319 2 704 343 = 4F C0 2B 01 57 C5
+header 319 3 704 342 = 4F C0 3B 01 56 C5
+header 319 63 704 362 = 4F C3 FB 01 6A C5
+header 319 64 704 277 = 4F C4 0B 01 15 C5
+header 319 255 704 426 = 4F CF FB 01 AA C5
+header 319 256 704 85 = 4F D0 0B 00 55 C5
+header 319 319 704 106 = 4F D3 FB 00 6A C5
+header 319 320 704 21 = 4F D4 0B 00 15 C5
+header 319 479 704 138 = 4F DD FB 00 8A C5
+header 319 511 704 170 = 4F DF FB 00 AA C5
+header 319 1023 704 682 = 4F FF FB 02 AA C5
+header 320 0 703 341 = 50 00 0A FD 55 C5
+header 320 1 703 340 = 50 00 1A FD 54 C5
+header 320 2 703 343 = 50 00 2A FD 57 C5
+header 320 3 703 342 = 50 00 3A FD 56 C5
+header 320 63 703 362 = 50 03 FA FD 6A C5
+header 320 64 703 277 = 50 04 0A FD 15 C5
+header 320 255 703 426 = 50 0F FA FD AA C5
+header 320 256 703 85 = 50 10 0A FC 55 C5
+header 320 319 703 106 = 50 13 FA FC 6A C5
+header 320 320 703 21 = 50 14 0A FC 15 C5
+header 320 479 703 138 = 50 1D FA FC 8A C5
+header 320 511 703 170 = 50 1F FA FC AA C5
+header 320 1023 703 682 = 50 3F FA FE AA C5
+header 479 0 544 341 = 77 C0 08 81 55 C5
+header 479 1 544 340 = 77 C0 18 81 54 C5
+header 479 2 544 343 = 77 C0 28 81 57 C5
+header 479 3 544 342 = 77 C0 38 81 56 C5
+header 479 63 544 362 = 77 C3 F8 81 6A C5
+header 479 64 544 277 = 77 C4 08 81 15 C5
+header 479 255 544 426 = 77 CF F8 81 AA C5
+header 479 256 544 85 = 77 D0 08 80 55 C5
+header 479 319 544 106 = 77 D3 F8 80 6A C5
+header 479 320 544 21 = 77 D4 08 80 15 C5
+header 479 479 544 138 = 77 DD F8 80 8A C5
+header 479 511 544 170 = 77 DF F8 80 AA C5
+header 479 1023 544 682 = 77 FF F8 82 AA C5
+header 511 0 512 341 = 7F C0 08 01 55 C5
+header 511 1 512 340 = 7F C0 18 01 54 C5
+header 511 2 512 343 = 7F C0 28 01 57 C5
+header 511 3 512 342 = 7F C0 38 01 56 C5
+header 511 63 512 362 = 7F C3 F8 01 6A C5
+header 511 64 512 277 = 7F C4 08 01 15 C5
+header 511 255 512 426 = 7F CF F8 01 AA C5
+header 511 256 512 85 = 7F D0 08 00 55 C5
+header 511 319 512 106 = 7F D3 F8 00 6A C5
+header 511 320 512 21 = 7F D4 08 00 15 C5
+header 511 479 512 138 = 7F DD F8 00 8A C5
+header 511 511 512 170 = 7F DF F8 00 AA C5
+header 511 1023 512 682 = 7F FF F8 02 AA C5
+header 1023 0 0 341 = FF C0 00 01 55 C5
+header 1023 1 0 340 = FF C0 10 01 54 C5
+header 1023 2 0 343 = FF C0 20 01 57 C5
+header 1023 3 0 342 = FF C0 30 01 56 C5
+header 1023 63 0 362 = FF C3 F0 01 6A C5
+header 1023 64 0 277 = FF C4 00 01 15 C5
+header 1023 255 0 426 = FF CF F0 01 AA C5
+header 1023 256 0 85 = FF D0 00 00 55 C5
+header 1023 319 0 106 = FF D3 F0 00 6A C5
+header 1023 320 0 21 = FF D4 00 00 15 C5
+header 1023 479 0 138 = FF DD F0 00 8A C5
+header 1023 511 0 170 = FF DF F0 00 AA C5
+header 1023 1023 0 682 = FF FF F0 02 AA C5
+header size16 = 00 40 20 0C 04 07 00 00 00 00 00 00 00 00 00 00
+size -1 = (320, 480)
+orientation -1 = !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'orientation')
+size 0 = (320, 480)
+orientation 0 = 00 00 00 00 00 79 64 01 40 01 E0 00 00 00 00 00
+size 1 = (320, 480)
+orientation 1 = 00 00 00 00 00 79 65 01 40 01 E0 00 00 00 00 00
+size 2 = (480, 320)
+orientation 2 = 00 00 00 00 00 79 66 01 E0 01 40 00 00 00 00 00
+size 3 = (480, 320)
+orientation 3 = 00 00 00 00 00 79 67 01 E0 01 40 00 00 00 00 00
+size 4 = (480, 320)
+orientation 4 = !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'orientation')
+mirror 0 = 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 00 00
+mirror 1 = 00 00 00 00 00 7A 01 00 00 00 00 00 00 00 00 00
+mirror 2 = 00 00 00 00 00 7A 02 00 00 00 00 00 00 00 00 00
+brightness -1 = !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'percent') !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'percent')
+brightness 0 = 255 3F C0 00 00 00 6E
+brightness 1 = 253 3F 40 00 00 00 6E
+brightness 2 = 250 3E 80 00 00 00 6E
+brightness 3 = 248 3E 00 00 00 00 6E
+brightness 4 = 245 3D 40 00 00 00 6E
+brightness 5 = 243 3C C0 00 00 00 6E
+brightness 6 = 240 3C 00 00 00 00 6E
+brightness 7 = 238 3B 80 00 00 00 6E
+brightness 8 = 235 3A C0 00 00 00 6E
+brightness 9 = 233 3A 40 00 00 00 6E
+brightness 10 = 230 39 80 00 00 00 6E
+brightness 11 = 227 38 C0 00 00 00 6E
+brightness 12 = 225 38 40 00 00 00 6E
+brightness 13 = 222 37 80 00 00 00 6E
+brightness 14 = 220 37 00 00 00 00 6E
+brightness 15 = 217 36 40 00 00 00 6E
+brightness 16 = 215 35 C0 00 00 00 6E
+brightness 17 = 212 35 00 00 00 00 6E
+brightness 18 = 210 34 80 00 00 00 6E
+brightness 19 = 207 33 C0 00 00 00 6E
+brightness 20 = 204 33 00 00 00 00 6E
+brightness 21 = 202 32 80 00 00 00 6E
+brightness 22 = 199 31 C0 00 00 00 6E
+brightness 23 = 197 31 40 00 00 00 6E
+brightness 24 = 194 30 80 00 00 00 6E
+brightness 25 = 192 30 00 00 00 00 6E
+brightness 26 = 189 2F 40 00 00 00 6E
+brightness 27 = 187 2E C0 00 00 00 6E
+brightness 28 = 184 2E 00 00 00 00 6E
+brightness 29 = 182 2D 80 00 00 00 6E
+brightness 30 = 179 2C C0 00 00 00 6E
+brightness 31 = 176 2C 00 00 00 00 6E
+brightness 32 = 174 2B 80 00 00 00 6E
+brightness 33 = 171 2A C0 00 00 00 6E
+brightness 34 = 169 2A 40 00 00 00 6E
+brightness 35 = 166 29 80 00 00 00 6E
+brightness 36 = 164 29 00 00 00 00 6E
+brightness 37 = 161 28 40 00 00 00 6E
+brightness 38 = 159 27 C0 00 00 00 6E
+brightness 39 = 156 27 00 00 00 00 6E
+brightness 40 = 153 26 40 00 00 00 6E
+brightness 41 = 151 25 C0 00 00 00 6E
+brightness 42 = 148 25 00 00 00 00 6E
+brightness 43 = 146 24 80 00 00 00 6E
+brightness 44 = 143 23 C0 00 00 00 6E
+brightness 45 = 141 23 40 00 00 00 6E
+brightness 46 = 138 22 80 00 00 00 6E
+brightness 47 = 136 22 00 00 00 00 6E
+brightness 48 = 133 21 40 00 00 00 6E
+brightness 49 = 131 20 C0 00 00 00 6E
+brightness 50 = 128 20 00 00 00 00 6E
+brightness 51 = 125 1F 40 00 00 00 6E
+brightness 52 = 123 1E C0 00 00 00 6E
+brightness 53 = 120 1E 00 00 00 00 6E
+brightness 54 = 118 1D 80 00 00 00 6E
+brightness 55 = 115 1C C0 00 00 00 6E
+brightness 56 = 113 1C 40 00 00 00 6E
+brightness 57 = 110 1B 80 00 00 00 6E
+brightness 58 = 108 1B 00 00 00 00 6E
+brightness 59 = 105 1A 40 00 00 00 6E
+brightness 60 = 102 19 80 00 00 00 6E
+brightness 61 = 100 19 00 00 00 00 6E
+brightness 62 = 97 18 40 00 00 00 6E
+brightness 63 = 95 17 C0 00 00 00 6E
+brightness 64 = 92 17 00 00 00 00 6E
+brightness 65 = 90 16 80 00 00 00 6E
+brightness 66 = 87 15 C0 00 00 00 6E
+brightness 67 = 85 15 40 00 00 00 6E
+brightness 68 = 82 14 80 00 00 00 6E
+brightness 69 = 80 14 00 00 00 00 6E
+brightness 70 = 77 13 40 00 00 00 6E
+brightness 71 = 74 12 80 00 00 00 6E
+brightness 72 = 72 12 00 00 00 00 6E
+brightness 73 = 69 11 40 00 00 00 6E
+brightness 74 = 67 10 C0 00 00 00 6E
+brightness 75 = 64 10 00 00 00 00 6E
+brightness 76 = 62 0F 80 00 00 00 6E
+brightness 77 = 59 0E C0 00 00 00 6E
+brightness 78 = 57 0E 40 00 00 00 6E
+brightness 79 = 54 0D 80 00 00 00 6E
+brightness 80 = 51 0C C0 00 00 00 6E
+brightness 81 = 49 0C 40 00 00 00 6E
+brightness 82 = 46 0B 80 00 00 00 6E
+brightness 83 = 44 0B 00 00 00 00 6E
+brightness 84 = 41 0A 40 00 00 00 6E
+brightness 85 = 39 09 C0 00 00 00 6E
+brightness 86 = 36 09 00 00 00 00 6E
+brightness 87 = 34 08 80 00 00 00 6E
+brightness 88 = 31 07 C0 00 00 00 6E
+brightness 89 = 29 07 40 00 00 00 6E
+brightness 90 = 26 06 80 00 00 00 6E
+brightness 91 = 23 05 C0 00 00 00 6E
+brightness 92 = 21 05 40 00 00 00 6E
+brightness 93 = 18 04 80 00 00 00 6E
+brightness 94 = 16 04 00 00 00 00 6E
+brightness 95 = 13 03 40 00 00 00 6E
+brightness 96 = 11 02 C0 00 00 00 6E
+brightness 97 = 8 02 00 00 00 00 6E
+brightness 98 = 6 01 80 00 00 00 6E
+brightness 99 = 3 00 C0 00 00 00 6E
+brightness 100 = 0 00 00 00 00 00 6E
+brightness 101 = !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'percent') !ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'percent')
+on = 00 00 00 00 00 6D
+off = 00 00 00 00 00 6C
+window = 02 81 41 B4 45 C5
+565 0 0 0 = 0000
+565 0 0 7 = 0000
+565 0 0 8 = 0001
+565 0 0 128 = 0010
+565 0 0 248 = 001F
+565 0 0 255 = 001F
+565 0 7 0 = 0020
+565 0 7 7 = 0020
+565 0 7 8 = 0021
+565 0 7 128 = 0030
+565 0 7 248 = 003F
+565 0 7 255 = 003F
+565 0 8 0 = 0040
+565 0 8 7 = 0040
+565 0 8 8 = 0041
+565 0 8 128 = 0050
+565 0 8 248 = 005F
+565 0 8 255 = 005F
+565 0 128 0 = 0400
+565 0 128 7 = 0400
+565 0 128 8 = 0401
+565 0 128 128 = 0410
+565 0 128 248 = 041F
+565 0 128 255 = 041F
+565 0 248 0 = 07C0
+565 0 248 7 = 07C0
+565 0 248 8 = 07C1
+565 0 248 128 = 07D0
+565 0 248 248 = 07DF
+565 0 248 255 = 07DF
+565 0 255 0 = 07E0
+565 0 255 7 = 07E0
+565 0 255 8 = 07E1
+565 0 255 128 = 07F0
+565 0 255 248 = 07FF
+565 0 255 255 = 07FF
+565 7 0 0 = 0000
+565 7 0 7 = 0000
+565 7 0 8 = 0001
+565 7 0 128 = 0010
+565 7 0 248 = 001F
+565 7 0 255 = 001F
+565 7 7 0 = 0020
+565 7 7 7 = 0020
+565 7 7 8 = 0021
+565 7 7 128 = 0030
+565 7 7 248 = 003F
+565 7 7 255 = 003F
+565 7 8 0 = 0040
+565 7 8 7 = 0040
+565 7 8 8 = 0041
+565 7 8 128 = 0050
+565 7 8 248 = 005F
+565 7 8 255 = 005F
+565 7 128 0 = 0400
+565 7 128 7 = 0400
+565 7 128 8 = 0401
+565 7 128 128 = 0410
+565 7 128 248 = 041F
+565 7 128 255 = 041F
+565 7 248 0 = 07C0
+565 7 248 7 = 07C0
+565 7 248 8 = 07C1
+565 7 248 128 = 07D0
+565 7 248 248 = 07DF
+565 7 248 255 = 07DF
+565 7 255 0 = 07E0
+565 7 255 7 = 07E0
+565 7 255 8 = 07E1
+565 7 255 128 = 07F0
+565 7 255 248 = 07FF
+565 7 255 255 = 07FF
+565 8 0 0 = 0800
+565 8 0 7 = 0800
+565 8 0 8 = 0801
+565 8 0 128 = 0810
+565 8 0 248 = 081F
+565 8 0 255 = 081F
+565 8 7 0 = 0820
+565 8 7 7 = 0820
+565 8 7 8 = 0821
+565 8 7 128 = 0830
+565 8 7 248 = 083F
+565 8 7 255 = 083F
+565 8 8 0 = 0840
+565 8 8 7 = 0840
+565 8 8 8 = 0841
+565 8 8 128 = 0850
+565 8 8 248 = 085F
+565 8 8 255 = 085F
+565 8 128 0 = 0C00
+565 8 128 7 = 0C00
+565 8 128 8 = 0C01
+565 8 128 128 = 0C10
+565 8 128 248 = 0C1F
+565 8 128 255 = 0C1F
+565 8 248 0 = 0FC0
+565 8 248 7 = 0FC0
+565 8 248 8 = 0FC1
+565 8 248 128 = 0FD0
+565 8 248 248 = 0FDF
+565 8 248 255 = 0FDF
+565 8 255 0 = 0FE0
+565 8 255 7 = 0FE0
+565 8 255 8 = 0FE1
+565 8 255 128 = 0FF0
+565 8 255 248 = 0FFF
+565 8 255 255 = 0FFF
+565 128 0 0 = 8000
+565 128 0 7 = 8000
+565 128 0 8 = 8001
+565 128 0 128 = 8010
+565 128 0 248 = 801F
+565 128 0 255 = 801F
+565 128 7 0 = 8020
+565 128 7 7 = 8020
+565 128 7 8 = 8021
+565 128 7 128 = 8030
+565 128 7 248 = 803F
+565 128 7 255 = 803F
+565 128 8 0 = 8040
+565 128 8 7 = 8040
+565 128 8 8 = 8041
+565 128 8 128 = 8050
+565 128 8 248 = 805F
+565 128 8 255 = 805F
+565 128 128 0 = 8400
+565 128 128 7 = 8400
+565 128 128 8 = 8401
+565 128 128 128 = 8410
+565 128 128 248 = 841F
+565 128 128 255 = 841F
+565 128 248 0 = 87C0
+565 128 248 7 = 87C0
+565 128 248 8 = 87C1
+565 128 248 128 = 87D0
+565 128 248 248 = 87DF
+565 128 248 255 = 87DF
+565 128 255 0 = 87E0
+565 128 255 7 = 87E0
+565 128 255 8 = 87E1
+565 128 255 128 = 87F0
+565 128 255 248 = 87FF
+565 128 255 255 = 87FF
+565 248 0 0 = F800
+565 248 0 7 = F800
+565 248 0 8 = F801
+565 248 0 128 = F810
+565 248 0 248 = F81F
+565 248 0 255 = F81F
+565 248 7 0 = F820
+565 248 7 7 = F820
+565 248 7 8 = F821
+565 248 7 128 = F830
+565 248 7 248 = F83F
+565 248 7 255 = F83F
+565 248 8 0 = F840
+565 248 8 7 = F840
+565 248 8 8 = F841
+565 248 8 128 = F850
+565 248 8 248 = F85F
+565 248 8 255 = F85F
+565 248 128 0 = FC00
+565 248 128 7 = FC00
+565 248 128 8 = FC01
+565 248 128 128 = FC10
+565 248 128 248 = FC1F
+565 248 128 255 = FC1F
+565 248 248 0 = FFC0
+565 248 248 7 = FFC0
+565 248 248 8 = FFC1
+565 248 248 128 = FFD0
+565 248 248 248 = FFDF
+565 248 248 255 = FFDF
+565 248 255 0 = FFE0
+565 248 255 7 = FFE0
+565 248 255 8 = FFE1
+565 248 255 128 = FFF0
+565 248 255 248 = FFFF
+565 248 255 255 = FFFF
+565 255 0 0 = F800
+565 255 0 7 = F800
+565 255 0 8 = F801
+565 255 0 128 = F810
+565 255 0 248 = F81F
+565 255 0 255 = F81F
+565 255 7 0 = F820
+565 255 7 7 = F820
+565 255 7 8 = F821
+565 255 7 128 = F830
+565 255 7 248 = F83F
+565 255 7 255 = F83F
+565 255 8 0 = F840
+565 255 8 7 = F840
+565 255 8 8 = F841
+565 255 8 128 = F850
+565 255 8 248 = F85F
+565 255 8 255 = F85F
+565 255 128 0 = FC00
+565 255 128 7 = FC00
+565 255 128 8 = FC01
+565 255 128 128 = FC10
+565 255 128 248 = FC1F
+565 255 128 255 = FC1F
+565 255 248 0 = FFC0
+565 255 248 7 = FFC0
+565 255 248 8 = FFC1
+565 255 248 128 = FFD0
+565 255 248 248 = FFDF
+565 255 248 255 = FFDF
+565 255 255 0 = FFE0
+565 255 255 7 = FFE0
+565 255 255 8 = FFE1
+565 255 255 128 = FFF0
+565 255 255 248 = FFFF
+565 255 255 255 = FFFF
+prologue 0 = 00 00 00 00 00 6D | 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 00 00 | 00 00 00 00 00 79 64 01 40 01 E0 00 00 00 00 00 | 00 00 04 FD DF C5
+prologue 1 = 00 00 00 00 00 6D | 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 00 00 | 00 00 00 00 00 79 65 01 40 01 E0 00 00 00 00 00 | 00 00 04 FD DF C5
+prologue 2 = 00 00 00 00 00 6D | 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 00 00 | 00 00 00 00 00 79 66 01 E0 01 40 00 00 00 00 00 | 00 00 07 7D 3F C5
+prologue 3 = 00 00 00 00 00 6D | 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 00 00 | 00 00 00 00 00 79 67 01 E0 01 40 00 00 00 00 00 | 00 00 07 7D 3F C5
+consts USB35INCHIPSV2 115200 320 480
+hex empty = []
+== fmt
+bytes null = -- rate =  rateneg = 
+bytes NaN = NaNM rate = +NaNM/d rateneg = +NaNM/d
+bytes -5000000000 = -5000M rate = -5G/d rateneg = +5G/d
+bytes 0 = 0M rate = +0M/d rateneg = +0M/d
+bytes 1 = 0M rate = +0M/d rateneg = -0M/d
+bytes 499999 = 0M rate = +0M/d rateneg = -0M/d
+bytes 500000 = 1M rate = +1M/d rateneg = -1M/d
+bytes 999999999 = 1000M rate = +1000M/d rateneg = -1000M/d
+bytes 1000000000 = 1G rate = +1G/d rateneg = -1G/d
+bytes 1500000000 = 2G rate = +2G/d rateneg = -2G/d
+bytes 448200000000 = 448G rate = +448G/d rateneg = -448G/d
+bytes 999400000000 = 999G rate = +999G/d rateneg = -999G/d
+bytes 999600000000 = 1000G rate = +1000G/d rateneg = -1000G/d
+bytes 1000000000000 = 1.0T rate = +1.0T/d rateneg = -1.0T/d
+bytes 1040000000000 = 1.0T rate = +1.0T/d rateneg = -1.0T/d
+bytes 4930000000000 = 4.9T rate = +4.9T/d rateneg = -4.9T/d
+bytes 9940000000000 = 9.9T rate = +9.9T/d rateneg = -9.9T/d
+bytes 9960000000000 = 10.0T rate = +10.0T/d rateneg = -10.0T/d
+bytes 10000000000000 = 10T rate = +10T/d rateneg = -10T/d
+bytes 89600000000000 = 90T rate = +90T/d rateneg = -90T/d
+bytes 1000000000000000 = 1000T rate = +1000T/d rateneg = -1000T/d
+growth null null = []
+growth null -5000000000 = [-5G/d 7d]
+growth null -3000000000 = [-3G/d 7d]
+growth null 0 = [+0M/d 7d]
+growth null -0 = [+0M/d 7d]
+growth null 4000000 = [+4M/d 7d]
+growth null 5000000000 = [+5G/d 7d]
+growth null 103000000000 = [+103G/d 7d]
+growth null 393000000000 = [+393G/d 7d]
+growth -5000000000 null = [-5G/d 24h]
+growth -5000000000 -5000000000 = [-5G/d 24h]
+growth -5000000000 -3000000000 = [-3G/d 7d]
+growth -5000000000 0 = [+0M/d 7d]
+growth -5000000000 -0 = [+0M/d 7d]
+growth -5000000000 4000000 = [+4M/d 7d]
+growth -5000000000 5000000000 = [+5G/d 7d]
+growth -5000000000 103000000000 = [+103G/d 7d]
+growth -5000000000 393000000000 = [+393G/d 7d]
+growth -3000000000 null = [-3G/d 24h]
+growth -3000000000 -5000000000 = [-3G/d 24h]
+growth -3000000000 -3000000000 = [-3G/d 24h]
+growth -3000000000 0 = [+0M/d 7d]
+growth -3000000000 -0 = [+0M/d 7d]
+growth -3000000000 4000000 = [+4M/d 7d]
+growth -3000000000 5000000000 = [+5G/d 7d]
+growth -3000000000 103000000000 = [+103G/d 7d]
+growth -3000000000 393000000000 = [+393G/d 7d]
+growth 0 null = [+0M/d 24h]
+growth 0 -5000000000 = [+0M/d 24h]
+growth 0 -3000000000 = [+0M/d 24h]
+growth 0 0 = [+0M/d 24h]
+growth 0 -0 = [+0M/d 24h]
+growth 0 4000000 = [+4M/d 7d]
+growth 0 5000000000 = [+5G/d 7d]
+growth 0 103000000000 = [+103G/d 7d]
+growth 0 393000000000 = [+393G/d 7d]
+growth -0 null = [+0M/d 24h]
+growth -0 -5000000000 = [+0M/d 24h]
+growth -0 -3000000000 = [+0M/d 24h]
+growth -0 0 = [+0M/d 24h]
+growth -0 -0 = [+0M/d 24h]
+growth -0 4000000 = [+4M/d 7d]
+growth -0 5000000000 = [+5G/d 7d]
+growth -0 103000000000 = [+103G/d 7d]
+growth -0 393000000000 = [+393G/d 7d]
+growth 4000000 null = [+4M/d 24h]
+growth 4000000 -5000000000 = [+4M/d 24h]
+growth 4000000 -3000000000 = [+4M/d 24h]
+growth 4000000 0 = [+4M/d 24h]
+growth 4000000 -0 = [+4M/d 24h]
+growth 4000000 4000000 = [+4M/d 24h]
+growth 4000000 5000000000 = [+5G/d 7d]
+growth 4000000 103000000000 = [+103G/d 7d]
+growth 4000000 393000000000 = [+393G/d 7d]
+growth 5000000000 null = [+5G/d 24h]
+growth 5000000000 -5000000000 = [+5G/d 24h]
+growth 5000000000 -3000000000 = [+5G/d 24h]
+growth 5000000000 0 = [+5G/d 24h]
+growth 5000000000 -0 = [+5G/d 24h]
+growth 5000000000 4000000 = [+5G/d 24h]
+growth 5000000000 5000000000 = [+5G/d 24h]
+growth 5000000000 103000000000 = [+103G/d 7d]
+growth 5000000000 393000000000 = [+393G/d 7d]
+growth 103000000000 null = [+103G/d 24h]
+growth 103000000000 -5000000000 = [+103G/d 24h]
+growth 103000000000 -3000000000 = [+103G/d 24h]
+growth 103000000000 0 = [+103G/d 24h]
+growth 103000000000 -0 = [+103G/d 24h]
+growth 103000000000 4000000 = [+103G/d 24h]
+growth 103000000000 5000000000 = [+103G/d 24h]
+growth 103000000000 103000000000 = [+103G/d 24h]
+growth 103000000000 393000000000 = [+393G/d 7d]
+growth 393000000000 null = [+393G/d 24h]
+growth 393000000000 -5000000000 = [+393G/d 24h]
+growth 393000000000 -3000000000 = [+393G/d 24h]
+growth 393000000000 0 = [+393G/d 24h]
+growth 393000000000 -0 = [+393G/d 24h]
+growth 393000000000 4000000 = [+393G/d 24h]
+growth 393000000000 5000000000 = [+393G/d 24h]
+growth 393000000000 103000000000 = [+393G/d 24h]
+growth 393000000000 393000000000 = [+393G/d 24h]
+num null = -- --
+num -1 = -1% -1.0
+num 0 = 0% 0.0
+num 0.04 = 0% 0.0
+num 0.05 = 0% 0.1
+num 0.5 = 0% 0.5
+num 1.45 = 1% 1.5
+num 2.5 = 2% 2.5
+num 3.5 = 4% 3.5
+num 49.5 = 50% 49.5
+num 50.5 = 50% 50.5
+num 99.94 = 100% 99.9
+num 99.95 = 100% 100.0
+num 99.96 = 100% 100.0
+num 100 = 100% 100
+num 100.5 = 100% 101
+num 101.5 = 102% 102
+num 1234.5 = 1234% 1235
+days null = []
+days -1 = [1h]
+days 0 = [1h]
+days 0.01 = [1h]
+days 0.02 = [1h]
+days 0.03 = [1h]
+days 0.4 = [10h]
+days 0.5 = [12h]
+days 0.99 = [24h]
+days 1 = [1d]
+days 1.99 = [1d]
+days 2.6 = [2d]
+days 98.9 = [98d]
+days 99 = [99d]
+days 99.5 = [99+d]
+days 100 = [99+d]
+days 150 = [99+d]
+== levels
+pct null null null = None
+pct null null 70 = None
+pct null null 90 = None
+pct null 70 null = None
+pct null 70 70 = None
+pct null 70 90 = None
+pct null 90 null = None
+pct null 90 70 = None
+pct null 90 90 = None
+pct 0 null null = None
+pct 0 null 70 = Ok
+pct 0 null 90 = Ok
+pct 0 70 null = Ok
+pct 0 70 70 = Ok
+pct 0 70 90 = Ok
+pct 0 90 null = Ok
+pct 0 90 70 = Ok
+pct 0 90 90 = Ok
+pct 69.9 null null = None
+pct 69.9 null 70 = Ok
+pct 69.9 null 90 = Ok
+pct 69.9 70 null = Ok
+pct 69.9 70 70 = Ok
+pct 69.9 70 90 = Ok
+pct 69.9 90 null = Ok
+pct 69.9 90 70 = Ok
+pct 69.9 90 90 = Ok
+pct 70 null null = None
+pct 70 null 70 = Alarm
+pct 70 null 90 = Ok
+pct 70 70 null = Warn
+pct 70 70 70 = Alarm
+pct 70 70 90 = Warn
+pct 70 90 null = Ok
+pct 70 90 70 = Alarm
+pct 70 90 90 = Ok
+pct 89.9 null null = None
+pct 89.9 null 70 = Alarm
+pct 89.9 null 90 = Ok
+pct 89.9 70 null = Warn
+pct 89.9 70 70 = Alarm
+pct 89.9 70 90 = Warn
+pct 89.9 90 null = Ok
+pct 89.9 90 70 = Alarm
+pct 89.9 90 90 = Ok
+pct 90 null null = None
+pct 90 null 70 = Alarm
+pct 90 null 90 = Alarm
+pct 90 70 null = Warn
+pct 90 70 70 = Alarm
+pct 90 70 90 = Alarm
+pct 90 90 null = Warn
+pct 90 90 70 = Alarm
+pct 90 90 90 = Alarm
+pct 99 null null = None
+pct 99 null 70 = Alarm
+pct 99 null 90 = Alarm
+pct 99 70 null = Warn
+pct 99 70 70 = Alarm
+pct 99 70 90 = Alarm
+pct 99 90 null = Warn
+pct 99 90 70 = Alarm
+pct 99 90 90 = Alarm
+storage null null null null null = None
+storage null null null null 7 = None
+storage null null null 30 null = None
+storage null null null 30 7 = None
+storage null null 300000000000 null null = None
+storage null null 300000000000 null 7 = None
+storage null null 300000000000 30 null = None
+storage null null 300000000000 30 7 = None
+storage null 2 null null null = None
+storage null 2 null null 7 = None
+storage null 2 null 30 null = None
+storage null 2 null 30 7 = None
+storage null 2 300000000000 null null = None
+storage null 2 300000000000 null 7 = None
+storage null 2 300000000000 30 null = None
+storage null 2 300000000000 30 7 = None
+storage null 7 null null null = None
+storage null 7 null null 7 = None
+storage null 7 null 30 null = None
+storage null 7 null 30 7 = None
+storage null 7 300000000000 null null = None
+storage null 7 300000000000 null 7 = None
+storage null 7 300000000000 30 null = None
+storage null 7 300000000000 30 7 = None
+storage null 12 null null null = None
+storage null 12 null null 7 = None
+storage null 12 null 30 null = None
+storage null 12 null 30 7 = None
+storage null 12 300000000000 null null = None
+storage null 12 300000000000 null 7 = None
+storage null 12 300000000000 30 null = None
+storage null 12 300000000000 30 7 = None
+storage null 30 null null null = None
+storage null 30 null null 7 = None
+storage null 30 null 30 null = None
+storage null 30 null 30 7 = None
+storage null 30 300000000000 null null = None
+storage null 30 300000000000 null 7 = None
+storage null 30 300000000000 30 null = None
+storage null 30 300000000000 30 7 = None
+storage null 150 null null null = None
+storage null 150 null null 7 = None
+storage null 150 null 30 null = None
+storage null 150 null 30 7 = None
+storage null 150 300000000000 null null = None
+storage null 150 300000000000 null 7 = None
+storage null 150 300000000000 30 null = None
+storage null 150 300000000000 30 7 = None
+storage 1000000000 null null null null = None
+storage 1000000000 null null null 7 = Ok
+storage 1000000000 null null 30 null = Ok
+storage 1000000000 null null 30 7 = Ok
+storage 1000000000 null 300000000000 null null = Alarm
+storage 1000000000 null 300000000000 null 7 = Alarm
+storage 1000000000 null 300000000000 30 null = Alarm
+storage 1000000000 null 300000000000 30 7 = Alarm
+storage 1000000000 2 null null null = None
+storage 1000000000 2 null null 7 = Alarm
+storage 1000000000 2 null 30 null = Warn
+storage 1000000000 2 null 30 7 = Alarm
+storage 1000000000 2 300000000000 null null = Alarm
+storage 1000000000 2 300000000000 null 7 = Alarm
+storage 1000000000 2 300000000000 30 null = Alarm
+storage 1000000000 2 300000000000 30 7 = Alarm
+storage 1000000000 7 null null null = None
+storage 1000000000 7 null null 7 = Ok
+storage 1000000000 7 null 30 null = Warn
+storage 1000000000 7 null 30 7 = Warn
+storage 1000000000 7 300000000000 null null = Alarm
+storage 1000000000 7 300000000000 null 7 = Alarm
+storage 1000000000 7 300000000000 30 null = Alarm
+storage 1000000000 7 300000000000 30 7 = Alarm
+storage 1000000000 12 null null null = None
+storage 1000000000 12 null null 7 = Ok
+storage 1000000000 12 null 30 null = Warn
+storage 1000000000 12 null 30 7 = Warn
+storage 1000000000 12 300000000000 null null = Alarm
+storage 1000000000 12 300000000000 null 7 = Alarm
+storage 1000000000 12 300000000000 30 null = Alarm
+storage 1000000000 12 300000000000 30 7 = Alarm
+storage 1000000000 30 null null null = None
+storage 1000000000 30 null null 7 = Ok
+storage 1000000000 30 null 30 null = Ok
+storage 1000000000 30 null 30 7 = Ok
+storage 1000000000 30 300000000000 null null = Alarm
+storage 1000000000 30 300000000000 null 7 = Alarm
+storage 1000000000 30 300000000000 30 null = Alarm
+storage 1000000000 30 300000000000 30 7 = Alarm
+storage 1000000000 150 null null null = None
+storage 1000000000 150 null null 7 = Ok
+storage 1000000000 150 null 30 null = Ok
+storage 1000000000 150 null 30 7 = Ok
+storage 1000000000 150 300000000000 null null = Alarm
+storage 1000000000 150 300000000000 null 7 = Alarm
+storage 1000000000 150 300000000000 30 null = Alarm
+storage 1000000000 150 300000000000 30 7 = Alarm
+storage 500000000000 null null null null = None
+storage 500000000000 null null null 7 = Ok
+storage 500000000000 null null 30 null = Ok
+storage 500000000000 null null 30 7 = Ok
+storage 500000000000 null 300000000000 null null = Ok
+storage 500000000000 null 300000000000 null 7 = Ok
+storage 500000000000 null 300000000000 30 null = Ok
+storage 500000000000 null 300000000000 30 7 = Ok
+storage 500000000000 2 null null null = None
+storage 500000000000 2 null null 7 = Alarm
+storage 500000000000 2 null 30 null = Warn
+storage 500000000000 2 null 30 7 = Alarm
+storage 500000000000 2 300000000000 null null = Ok
+storage 500000000000 2 300000000000 null 7 = Alarm
+storage 500000000000 2 300000000000 30 null = Warn
+storage 500000000000 2 300000000000 30 7 = Alarm
+storage 500000000000 7 null null null = None
+storage 500000000000 7 null null 7 = Ok
+storage 500000000000 7 null 30 null = Warn
+storage 500000000000 7 null 30 7 = Warn
+storage 500000000000 7 300000000000 null null = Ok
+storage 500000000000 7 300000000000 null 7 = Ok
+storage 500000000000 7 300000000000 30 null = Warn
+storage 500000000000 7 300000000000 30 7 = Warn
+storage 500000000000 12 null null null = None
+storage 500000000000 12 null null 7 = Ok
+storage 500000000000 12 null 30 null = Warn
+storage 500000000000 12 null 30 7 = Warn
+storage 500000000000 12 300000000000 null null = Ok
+storage 500000000000 12 300000000000 null 7 = Ok
+storage 500000000000 12 300000000000 30 null = Warn
+storage 500000000000 12 300000000000 30 7 = Warn
+storage 500000000000 30 null null null = None
+storage 500000000000 30 null null 7 = Ok
+storage 500000000000 30 null 30 null = Ok
+storage 500000000000 30 null 30 7 = Ok
+storage 500000000000 30 300000000000 null null = Ok
+storage 500000000000 30 300000000000 null 7 = Ok
+storage 500000000000 30 300000000000 30 null = Ok
+storage 500000000000 30 300000000000 30 7 = Ok
+storage 500000000000 150 null null null = None
+storage 500000000000 150 null null 7 = Ok
+storage 500000000000 150 null 30 null = Ok
+storage 500000000000 150 null 30 7 = Ok
+storage 500000000000 150 300000000000 null null = Ok
+storage 500000000000 150 300000000000 null 7 = Ok
+storage 500000000000 150 300000000000 30 null = Ok
+storage 500000000000 150 300000000000 30 7 = Ok
+== storage math
+fresh null = False
+fresh -1 = True
+fresh 0 = True
+fresh 120 = True
+fresh 120.5 = False
+fresh 121 = False
+lowest null null = null
+lowest null 500 = 500
+lowest null 600 = 600
+lowest null 700 = 700
+lowest 500 null = 500
+lowest 500 500 = 500
+lowest 500 600 = 500
+lowest 500 700 = 500
+lowest 600 null = 600
+lowest 600 500 = 500
+lowest 600 600 = 600
+lowest 600 700 = 600
+lowest 700 null = 700
+lowest 700 500 = 500
+lowest 700 600 = 600
+lowest 700 700 = 700
+daysleft null null null = null
+daysleft null null -5 = null
+daysleft null null 0 = null
+daysleft null null 50 = null
+daysleft null null 100 = null
+daysleft null -5 null = null
+daysleft null -5 -5 = null
+daysleft null -5 0 = null
+daysleft null -5 50 = null
+daysleft null -5 100 = null
+daysleft null 0 null = null
+daysleft null 0 -5 = null
+daysleft null 0 0 = null
+daysleft null 0 50 = null
+daysleft null 0 100 = null
+daysleft null 50 null = null
+daysleft null 50 -5 = null
+daysleft null 50 0 = null
+daysleft null 50 50 = null
+daysleft null 50 100 = null
+daysleft null 100 null = null
+daysleft null 100 -5 = null
+daysleft null 100 0 = null
+daysleft null 100 50 = null
+daysleft null 100 100 = null
+daysleft -10 null null = null
+daysleft -10 null -5 = null
+daysleft -10 null 0 = null
+daysleft -10 null 50 = 0
+daysleft -10 null 100 = 0
+daysleft -10 -5 null = null
+daysleft -10 -5 -5 = null
+daysleft -10 -5 0 = null
+daysleft -10 -5 50 = 0
+daysleft -10 -5 100 = 0
+daysleft -10 0 null = null
+daysleft -10 0 -5 = null
+daysleft -10 0 0 = null
+daysleft -10 0 50 = 0
+daysleft -10 0 100 = 0
+daysleft -10 50 null = 0
+daysleft -10 50 -5 = 0
+daysleft -10 50 0 = 0
+daysleft -10 50 50 = 0
+daysleft -10 50 100 = 0
+daysleft -10 100 null = 0
+daysleft -10 100 -5 = 0
+daysleft -10 100 0 = 0
+daysleft -10 100 50 = 0
+daysleft -10 100 100 = 0
+daysleft 0 null null = null
+daysleft 0 null -5 = null
+daysleft 0 null 0 = null
+daysleft 0 null 50 = 0
+daysleft 0 null 100 = 0
+daysleft 0 -5 null = null
+daysleft 0 -5 -5 = null
+daysleft 0 -5 0 = null
+daysleft 0 -5 50 = 0
+daysleft 0 -5 100 = 0
+daysleft 0 0 null = null
+daysleft 0 0 -5 = null
+daysleft 0 0 0 = null
+daysleft 0 0 50 = 0
+daysleft 0 0 100 = 0
+daysleft 0 50 null = 0
+daysleft 0 50 -5 = 0
+daysleft 0 50 0 = 0
+daysleft 0 50 50 = 0
+daysleft 0 50 100 = 0
+daysleft 0 100 null = 0
+daysleft 0 100 -5 = 0
+daysleft 0 100 0 = 0
+daysleft 0 100 50 = 0
+daysleft 0 100 100 = 0
+daysleft 600 null null = null
+daysleft 600 null -5 = null
+daysleft 600 null 0 = null
+daysleft 600 null 50 = 12
+daysleft 600 null 100 = 6
+daysleft 600 -5 null = null
+daysleft 600 -5 -5 = null
+daysleft 600 -5 0 = null
+daysleft 600 -5 50 = 12
+daysleft 600 -5 100 = 6
+daysleft 600 0 null = null
+daysleft 600 0 -5 = null
+daysleft 600 0 0 = null
+daysleft 600 0 50 = 12
+daysleft 600 0 100 = 6
+daysleft 600 50 null = 12
+daysleft 600 50 -5 = 12
+daysleft 600 50 0 = 12
+daysleft 600 50 50 = 12
+daysleft 600 50 100 = 6
+daysleft 600 100 null = 6
+daysleft 600 100 -5 = 6
+daysleft 600 100 0 = 6
+daysleft 600 100 50 = 6
+daysleft 600 100 100 = 6
+fill null null = null
+fill null -100 = null
+fill null 0 = null
+fill null 250 = null
+fill null 1000 = null
+fill null 1500 = null
+fill -1 null = null
+fill -1 -100 = null
+fill -1 0 = null
+fill -1 250 = null
+fill -1 1000 = null
+fill -1 1500 = null
+fill 0 null = null
+fill 0 -100 = null
+fill 0 0 = null
+fill 0 250 = null
+fill 0 1000 = null
+fill 0 1500 = null
+fill 1000 null = null
+fill 1000 -100 = 1
+fill 1000 0 = 1
+fill 1000 250 = 0.75
+fill 1000 1000 = 0
+fill 1000 1500 = 0
+== parse
+parse [] = Reading { Value = , Error = bad response, Transport = False }
+parse [{] = Reading { Value = , Error = bad response, Transport = False }
+parse [[]] = Reading { Value = , Error = bad response, Transport = False }
+parse [{}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":"error"}] = Reading { Value = , Error = query error, Transport = False }
+parse [{"status":"success"}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":"success","data":{}}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":"success","data":{"result":[]}}] = Reading { Value = , Error = no data, Transport = False }
+parse [{"status":"success","data":{"result":{}}}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"2.5"]},{"value":[1,"3"]}]}}] = Reading { Value = , Error = 2 series, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"2.5"]}]}}] = Reading { Value = 2.5, Error = , Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"1e300"]}]}}] = Reading { Value = 1E+300, Error = , Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"NaN"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"+Inf"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"Infinity"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"-1e400"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,"abc"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1,2]}]}}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":"success","data":{"result":[{"value":[1]}]}}] = !IndexOutOfRangeException: Index was outside the bounds of the array.
+parse [{"status":"success","data":{"result":[{}]}}] = Reading { Value = , Error = bad response, Transport = False }
+parse [{"status":5}] = Reading { Value = , Error = bad response, Transport = False }
+reading ok = Reading { Value = 1.5, Error = , Transport = False } fail = Reading { Value = , Error = x, Transport = False } failT = Reading { Value = , Error = y, Transport = True }
+== config
+default http://localhost:8428 10 300 120 2 100 [localhost] 30 7
+  source node [time() - max(timestamp(node_load1{instance="localhost:9100"}))]
+  load CPU node [100 * (1 - avg(rate(node_cpu_seconds_total{instance="localhost:9100",mode="idle"}[1m])))] ld [max(node_load1{instance="localhost:9100"})]  70 90
+  load RAM node [100 * (1 - max(node_memory_MemAvailable_bytes{instance="localhost:9100"}) / max(node_memory_MemTotal_bytes{instance="localhost:9100"}))]  []  80 95
+  load IO wait node [100 * avg(rate(node_cpu_seconds_total{instance="localhost:9100",mode="iowait"}[1m]))]  []  20 50
+  load Disk IO node [100 * max(rate(node_disk_io_time_seconds_total{instance="localhost:9100"}[1m]))]  []  70 90
+  storage / node [max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"})] [max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"}) - max(node_filesystem_avail_bytes{instance="localhost:9100",mountpoint="/"})] null
+    min [min_over_time(((max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"})) - (max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"}) - max(node_filesystem_avail_bytes{instance="localhost:9100",mountpoint="/"})))[7d:1h])]
+    g1 [86400 * deriv((max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"}) - max(node_filesystem_avail_bytes{instance="localhost:9100",mountpoint="/"}))[1d:10m])]
+    g7 [86400 * deriv((max(node_filesystem_size_bytes{instance="localhost:9100",mountpoint="/"}) - max(node_filesystem_avail_bytes{instance="localhost:9100",mountpoint="/"}))[7d:1h])]
+config [null] = !InvalidDataException: empty config
+config [{}] = !InvalidDataException: VmUrl is empty
+config [{"VmUrl":" "}] = !InvalidDataException: VmUrl is empty
+config [{"VmUrl":"u","RefreshSeconds":1}] = !InvalidDataException: RefreshSeconds must be at least 2
+config [{"VmUrl":"u","Orientation":4}] = !InvalidDataException: Orientation must be 0-3
+config [{"VmUrl":"u","Orientation":-1}] = !InvalidDataException: Orientation must be 0-3
+config [{"VmUrl":"u","Brightness":101}] = !InvalidDataException: Brightness must be 0-100
+config [{"VmUrl":"u","Sources":[{"Name":"a"},{"Name":"a"}]}] = !InvalidDataException: duplicate source 'a'
+config [{"VmUrl":"u","Load":[{"Label":"l","Source":"x"}]}] = !InvalidDataException: load 'l': unknown source 'x'
+config [{"VmUrl":"u","Storage":[{"Label":"s","Source":"x"}]}] = !InvalidDataException: storage 's': unknown source 'x'
+config [{"vmurl":"u",/* c */"refreshseconds":2,}] = ok u 2
+config [{"VmUrl":"u","RefreshSeconds":"x"}] = !JsonException: The JSON value could not be converted to System.Int32. Path: $.RefreshSeconds | LineNumber: 0 | BytePositionInLine: 33.
+expand [S-U{size}-S]
+== collector
+-- base
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- stale-pve
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=2 ok=3 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- stale-node-edge
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- stale-node-over
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=2 ok=3 err=[]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=null x=null level=None pct=-- num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- age-missing
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=2 ok=3 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- shrinking
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=null g1=-12 g7=-3 level=Ok fill=0.4 text=[0M|0M|-0M/d 7d|]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- missing-g1
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=null g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- missing-q1
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=null x=3.5 level=None pct=-- num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- multi-q2
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- nan-sz
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- bad-used
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- http400-qx
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=42 x=null level=Ok pct=42% num=--
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- http500-q1
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=5 err=[]
+  load a note=[] xl=[ld] v=null x=3.5 level=None pct=-- num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- trend-transport
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=600 days=null g1=null g7=null level=Ok fill=0.4 text=[0M|0M||]
+  storage t size=5000 free=500 low=500 days=null g1=null g7=null level=Alarm fill=0.9 text=[0M|0M||]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- trend-min-transport-only-first
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=600 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- all-500
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=3 ok=0 err=[]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=null x=null level=None pct=-- num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage u size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- full
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=0 low=0 days=0 g1=100 g7=50 level=Alarm fill=1 text=[0M|0M|+0M/d 24h|1h]
+  storage t size=5000 free=1 low=1 days=0.05 g1=-10 g7=20 level=Alarm fill=0.9998 text=[0M|0M|+0M/d 7d|1h]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- overfull
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=-200 low=-200 days=0 g1=100 g7=50 level=Alarm fill=1 text=[-0M|-0M|+0M/d 24h|1h]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- down
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=3 ok=0 err=[]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=null x=null level=None pct=-- num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage u size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- clean-down
+  frame 2026-10-20T06:00:00.0000000Z [clean] vm=False stale=2 ok=0 err=[unreachable: connection refused]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 9: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query US
+-- clean-all-500
+  frame 2026-10-20T06:00:00.0000000Z [clean] vm=False stale=2 ok=0 err=[HTTP 503]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 9: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query US
+-- clean-base
+  frame 2026-10-20T06:00:00.0000000Z [clean] vm=True stale=0 ok=3 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=None pct=42% num=3.5
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=None fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  asked 9: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query US
+-- clean-mixed-errors
+  frame 2026-10-20T06:00:00.0000000Z [clean] vm=False stale=2 ok=0 err=[HTTP 500]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 9: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query US
+-- clean-499
+  frame 2026-10-20T06:00:00.0000000Z [clean] vm=True stale=2 ok=0 err=[]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 9: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query US
+-- cadence t0
+  frame 2026-10-20T06:00:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+100 new trends not asked
+  frame 2026-10-20T06:01:40.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 13: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+299
+  frame 2026-10-20T06:04:59.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=6 g1=100 g7=50 level=Alarm fill=0.4 text=[0M|0M|+0M/d 24h|6d]
+  storage t size=5000 free=500 low=300 days=25 g1=-10 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 13: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+300 refresh
+  frame 2026-10-20T06:05:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=7 g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=7 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+600 min transport
+  frame 2026-10-20T06:10:00.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=7 g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=7 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+601 retry
+  frame 2026-10-20T06:10:01.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=11 g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=11 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 22: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query G1() ; http://fake/api/v1/query G1(US) ; http://fake/api/v1/query G1(US2) ; http://fake/api/v1/query G7() ; http://fake/api/v1/query G7(US) ; http://fake/api/v1/query G7(US2) ; http://fake/api/v1/query MIN(SZ2|US2) ; http://fake/api/v1/query MIN(SZ3|) ; http://fake/api/v1/query MIN(SZ|US) ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+700 down
+  frame 2026-10-20T06:11:40.0000000Z [golden] vm=True stale=3 ok=0 err=[]
+  load a note=[] xl=[ld] v=null x=null level=None pct=-- num=--
+  load b note=[12c] xl=[] v=null x=null level=None pct=-- num=--
+  load c note=[] xl=[] v=null x=null level=None pct=-- num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage t size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  storage u size=null free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 13: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+701 up
+  frame 2026-10-20T06:11:41.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=11 g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=11 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 13: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
+-- cadence t+650 clock back
+  frame 2026-10-20T06:10:50.0000000Z [golden] vm=True stale=1 ok=6 err=[]
+  load a note=[] xl=[ld] v=42 x=3.5 level=Ok pct=42% num=3.5
+  load b note=[12c] xl=[] v=95 x=null level=Alarm pct=95% num=--
+  load c note=[] xl=[] v=75 x=null level=None pct=75% num=--
+  load d note=[] xl=[e] v=null x=null level=None pct=-- num=--
+  storage s size=1000 free=600 low=500 days=12 g1=11 g7=50 level=Warn fill=0.4 text=[0M|0M|+0M/d 7d|12d]
+  storage t size=5000 free=500 low=300 days=25 g1=11 g7=20 level=Alarm fill=0.9 text=[0M|0M|+0M/d 7d|25d]
+  storage u size=77 free=null low=null days=null g1=null g7=null level=None fill=null text=[--|--||]
+  asked 13: http://fake/api/v1/query AGE_NODE ; http://fake/api/v1/query AGE_PVE ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q1 ; http://fake/api/v1/query Q2 ; http://fake/api/v1/query Q3 ; http://fake/api/v1/query QX ; http://fake/api/v1/query QX ; http://fake/api/v1/query SZ ; http://fake/api/v1/query SZ2 ; http://fake/api/v1/query SZ3 ; http://fake/api/v1/query US ; http://fake/api/v1/query US2
