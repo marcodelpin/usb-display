@@ -36,16 +36,22 @@ function Stop-OwnTray([string]$Exe, [string]$State) {
   Set-Content -LiteralPath $request -Value (Get-Date -Format o)
   $deadline = (Get-Date).AddSeconds(30)
   while ((Get-OwnTray $Exe).Count -and (Get-Date) -lt $deadline) { Start-Sleep -Milliseconds 250 }
-  $left = Get-OwnTray $Exe
-  if ($left.Count) {
+  $forced = 0
+  if ((Get-OwnTray $Exe).Count) {
     $mark = Get-FrameMark $State
     $deadline = (Get-Date).AddSeconds(20)
-    while ((Get-FrameMark $State) -eq $mark -and (Get-Date) -lt $deadline) { Start-Sleep -Milliseconds 100 }
-    foreach ($p in $left) { Stop-Process -Id $p.ProcessId -Force }
-    Start-Sleep -Milliseconds 800
+    while ((Get-FrameMark $State) -eq $mark -and (Get-OwnTray $Exe).Count -and (Get-Date) -lt $deadline) {
+      Start-Sleep -Milliseconds 200
+    }
+    # Enumerate again: a tray that finished a slow refresh may have left on its own in the meantime.
+    foreach ($p in (Get-OwnTray $Exe)) {
+      Stop-Process -Id $p.ProcessId -Force -ErrorAction SilentlyContinue
+      $forced++
+    }
+    if ($forced) { Start-Sleep -Milliseconds 800 }
   }
   Remove-Item -LiteralPath $request -ErrorAction SilentlyContinue
-  'stopped {0} running instance(s): {1} on request, {2} forced after a refresh' -f $procs.Count, ($procs.Count - $left.Count), $left.Count
+  'stopped {0} running instance(s): {1} on request, {2} forced after a refresh' -f $procs.Count, ($procs.Count - $forced), $forced
 }
 
 Stop-OwnTray $exe $state

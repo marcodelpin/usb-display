@@ -54,10 +54,10 @@ internal sealed class TrayContext : ApplicationContext
         _timer.Interval = _cfg.RefreshSeconds * 1000;
         _timer.Tick += async (_, _) => await RefreshAsync();
         _timer.Start();
-        File.Delete(Paths.StopRequestFile); // a request left by an earlier stop is not addressed to this instance
+        var startedUtc = Process.GetCurrentProcess().StartTime.ToUniversalTime();
         _stopPoll.Tick += async (_, _) =>
         {
-            if (!_stopping && File.Exists(Paths.StopRequestFile)) await StopAfterFrameAsync();
+            if (!_stopping && StopRequest.IsFor(Paths.StopRequestFile, startedUtc)) await StopAfterFrameAsync();
         };
         _stopPoll.Start();
         _ = RefreshAsync();
