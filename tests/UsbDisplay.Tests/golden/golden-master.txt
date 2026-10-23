@@ -514,7 +514,7 @@ consts USB35INCHIPSV2 115200 320 480
 hex empty = []
 == fmt
 bytes null = -- rate =  rateneg = 
-bytes NaN = NaNM rate = +NaNM/d rateneg = +NaNM/d
+bytes NaN = -- rate =  rateneg = 
 bytes -5000000000 = -5000M rate = -5G/d rateneg = +5G/d
 bytes 0 = 0M rate = +0M/d rateneg = +0M/d
 bytes 1 = 0M rate = +0M/d rateneg = -0M/d
@@ -1024,7 +1024,7 @@ parse [{"status":"success","data":{"result":[{"value":[1,"Infinity"]}]}}] = Read
 parse [{"status":"success","data":{"result":[{"value":[1,"-1e400"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
 parse [{"status":"success","data":{"result":[{"value":[1,"abc"]}]}}] = Reading { Value = , Error = not a number, Transport = False }
 parse [{"status":"success","data":{"result":[{"value":[1,2]}]}}] = Reading { Value = , Error = bad response, Transport = False }
-parse [{"status":"success","data":{"result":[{"value":[1]}]}}] = !IndexOutOfRangeException: Index was outside the bounds of the array.
+parse [{"status":"success","data":{"result":[{"value":[1]}]}}] = Reading { Value = , Error = bad response, Transport = False }
 parse [{"status":"success","data":{"result":[{}]}}] = Reading { Value = , Error = bad response, Transport = False }
 parse [{"status":5}] = Reading { Value = , Error = bad response, Transport = False }
 reading ok = Reading { Value = 1.5, Error = , Transport = False } fail = Reading { Value = , Error = x, Transport = False } failT = Reading { Value = , Error = y, Transport = True }

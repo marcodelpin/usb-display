@@ -142,4 +142,12 @@ public class CollectorTests
     [InlineData(120.0, true)]
     [InlineData(121.0, false)]
     public void AgeLimitIsInclusive(double age, bool fresh) => Assert.Equal(fresh, StorageMath.IsFresh(age, 120));
+
+    [Fact]
+    public void SampleWithoutAValueIsABadResponse()
+    {
+        var r = PromClient.ParseInstant("""{"status":"success","data":{"result":[{"value":[1]}]}}""");
+        Assert.Null(r.Value);
+        Assert.Equal("bad response", r.Error);
+    }
 }

@@ -59,7 +59,9 @@ public sealed class PromClient : IDisposable
             var n = result.GetArrayLength();
             if (n == 0) return Reading.Fail("no data");
             if (n > 1) return Reading.Fail($"{n} series");
-            var raw = result[0].GetProperty("value")[1].GetString();
+            var sample = result[0].GetProperty("value");
+            if (sample.ValueKind != JsonValueKind.Array || sample.GetArrayLength() != 2) return Reading.Fail("bad response");
+            var raw = sample[1].GetString();
             if (!double.TryParse(raw, NumberStyles.Float, CultureInfo.InvariantCulture, out var v) || double.IsNaN(v) || double.IsInfinity(v))
             {
                 return Reading.Fail("not a number");

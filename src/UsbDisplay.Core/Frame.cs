@@ -100,11 +100,17 @@ public static class StorageMath
     /// <summary>Days until full at the steeper positive growth (bytes/day); null when neither rate grows.</summary>
     public static double? DaysLeft(double? free, double? growthPerDay1d, double? growthPerDay7d)
     {
-        if (free is null) return null;
-        var g = Math.Max(growthPerDay1d ?? 0, growthPerDay7d ?? 0);
+        if (Num.Finite(free) is not { } f) return null;
+        var g = Math.Max(Num.Finite(growthPerDay1d) ?? 0, Num.Finite(growthPerDay7d) ?? 0);
         if (g <= 0) return null;
-        return Math.Max(0, free.Value) / g;
+        return Math.Max(0, f) / g;
     }
+}
+
+/// <summary>A non-finite double (NaN, infinity) counts as unknown wherever a value is computed or shown.</summary>
+internal static class Num
+{
+    public static double? Finite(double? v) => v is { } x && double.IsFinite(x) ? x : null;
 }
 
 public static class Fmt
@@ -114,8 +120,7 @@ public static class Fmt
     /// <summary>Decimal units, as the storage APIs report them: 448G, 4.9T, 12T.</summary>
     public static string Bytes(double? b)
     {
-        if (b is null) return "--";
-        var v = b.Value;
+        if (Num.Finite(b) is not { } v) return "--";
         if (v >= 1e13) return (v / 1e12).ToString("0", Inv) + "T";
         if (v >= 1e12) return (v / 1e12).ToString("0.0", Inv) + "T";
         if (v >= 1e9) return (v / 1e9).ToString("0", Inv) + "G";
@@ -124,7 +129,7 @@ public static class Fmt
 
     /// <summary>Signed bytes per day: +106G/d, -12G/d, +0M/d. Empty when unknown.</summary>
     public static string Rate(double? bytesPerDay) =>
-        bytesPerDay is null ? "" : (bytesPerDay.Value < 0 ? "-" : "+") + Bytes(Math.Abs(bytesPerDay.Value)) + "/d";
+        Num.Finite(bytesPerDay) is not { } v ? "" : (v < 0 ? "-" : "+") + Bytes(Math.Abs(v)) + "/d";
 
     /// <summary>
     /// The steeper of the two growth rates (the one that drives days-left; the least negative when
@@ -132,21 +137,23 @@ public static class Fmt
     /// </summary>
     public static string Growth(double? growth1d, double? growth7d)
     {
-        if (growth1d is null && growth7d is null) return "";
-        if (growth7d is null || (growth1d is not null && growth1d.Value >= growth7d.Value)) return Rate(growth1d) + " 24h";
-        return Rate(growth7d) + " 7d";
+        var g1 = Num.Finite(growth1d);
+        var g7 = Num.Finite(growth7d);
+        if (g1 is null && g7 is null) return "";
+        if (g7 is null || (g1 is not null && g1.Value >= g7.Value)) return Rate(g1) + " 24h";
+        return Rate(g7) + " 7d";
     }
 
-    public static string Percent(double? p) => p is null ? "--" : Math.Round(p.Value).ToString("0", Inv) + "%";
+    public static string Percent(double? p) => Num.Finite(p) is not { } v ? "--" : Math.Round(v).ToString("0", Inv) + "%";
 
-    public static string Number(double? n) => n is null ? "--" : n.Value.ToString(n.Value >= 100 ? "0" : "0.0", Inv);
+    public static string Number(double? n) => Num.Finite(n) is not { } v ? "--" : v.ToString(v >= 100 ? "0" : "0.0", Inv);
 
     /// <summary>Whole days, rounded down so the warning is never late; hours under one day.</summary>
     public static string Days(double? d)
     {
-        if (d is null) return "";
-        if (d.Value < 1) return Math.Max(1, Math.Round(d.Value * 24)).ToString("0", Inv) + "h";
-        if (d.Value > 99) return "99+d";
-        return Math.Floor(d.Value).ToString("0", Inv) + "d";
+        if (Num.Finite(d) is not { } v) return "";
+        if (v < 1) return Math.Max(1, Math.Round(v * 24)).ToString("0", Inv) + "h";
+        if (v > 99) return "99+d";
+        return Math.Floor(v).ToString("0", Inv) + "d";
     }
 }

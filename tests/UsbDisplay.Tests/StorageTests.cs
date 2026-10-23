@@ -56,6 +56,33 @@ public class StorageTests
     public void UnknownRateIsEmpty() => Assert.Equal("", Fmt.Rate(null));
 
     [Theory]
+    [InlineData(double.NaN)]
+    [InlineData(double.PositiveInfinity)]
+    [InlineData(double.NegativeInfinity)]
+    public void NonFiniteValuesFormatAsUnknown(double v)
+    {
+        Assert.Equal("--", Fmt.Bytes(v));
+        Assert.Equal("", Fmt.Rate(v));
+        Assert.Equal("--", Fmt.Percent(v));
+        Assert.Equal("--", Fmt.Number(v));
+        Assert.Equal("", Fmt.Days(v));
+    }
+
+    [Theory]
+    [InlineData(1e9, double.NaN, "+1G/d 24h")]
+    [InlineData(double.NaN, 1e9, "+1G/d 7d")]
+    [InlineData(double.PositiveInfinity, double.NaN, "")]
+    public void GrowthIgnoresNonFiniteRates(double g1, double g7, string want) =>
+        Assert.Equal(want, Fmt.Growth(g1, g7));
+
+    [Fact]
+    public void DaysLeftIgnoresNonFiniteRates()
+    {
+        Assert.Equal(10, StorageMath.DaysLeft(100, double.NaN, 10));
+        Assert.Null(StorageMath.DaysLeft(100, double.NaN, double.PositiveInfinity));
+    }
+
+    [Theory]
     [InlineData(103e9, -15e9, "+103G/d 24h")]    // 1d spike, the 7d average hides it
     [InlineData(272e9, 393e9, "+393G/d 7d")]     // 7d is steeper
     [InlineData(5e9, 5e9, "+5G/d 24h")]          // tie goes to 24h
