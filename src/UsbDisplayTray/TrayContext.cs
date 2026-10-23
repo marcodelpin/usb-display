@@ -9,12 +9,14 @@ internal sealed class TrayContext : ApplicationContext
 {
     private readonly NotifyIcon _icon;
     private readonly System.Windows.Forms.Timer _timer = new();
+    private readonly System.Windows.Forms.Timer _stopPoll = new() { Interval = 500 };
     private readonly ToolStripMenuItem _pause = new("Pause");
     private AppConfig _cfg;
     private Collector _collector;
     private volatile bool _brightnessPending = true;
     private bool _busy;
     private bool _paused;
+    private bool _stopping;
     private string _status = "starting";
 
     public TrayContext()
@@ -46,18 +48,38 @@ internal sealed class TrayContext : ApplicationContext
         menu.Items.Add("Open config", null, (_, _) => Process.Start(new ProcessStartInfo(Paths.ConfigFile) { UseShellExecute = true }));
         menu.Items.Add("Reload config", null, async (_, _) => await ReloadAsync());
         menu.Items.Add(new ToolStripSeparator());
-        menu.Items.Add("Exit", null, (_, _) => ExitThread());
+        menu.Items.Add("Exit", null, async (_, _) => await StopAfterFrameAsync());
 
         _icon = new NotifyIcon { Icon = TrayIcon.Create(), Text = "usb-display: starting", Visible = true, ContextMenuStrip = menu };
         _timer.Interval = _cfg.RefreshSeconds * 1000;
         _timer.Tick += async (_, _) => await RefreshAsync();
         _timer.Start();
+        File.Delete(Paths.StopRequestFile); // a request left by an earlier stop is not addressed to this instance
+        _stopPoll.Tick += async (_, _) =>
+        {
+            if (!_stopping && File.Exists(Paths.StopRequestFile)) await StopAfterFrameAsync();
+        };
+        _stopPoll.Start();
         _ = RefreshAsync();
+    }
+
+    /// <summary>
+    /// Exit without cutting a frame write short: a kill in the middle of a 307 KB write can leave the panel's
+    /// USB serial endpoint wedged until the device is restarted. No new refresh starts once stopping.
+    /// </summary>
+    private async Task StopAfterFrameAsync()
+    {
+        if (_stopping) return;
+        _stopping = true;
+        _timer.Stop();
+        _stopPoll.Stop();
+        while (_busy) await Task.Delay(100);
+        ExitThread();
     }
 
     private async Task RefreshAsync()
     {
-        if (_busy || _paused) return;
+        if (_busy || _paused || _stopping) return;
         _busy = true;
         try
         {
@@ -145,6 +167,7 @@ internal sealed class TrayContext : ApplicationContext
     protected override void ExitThreadCore()
     {
         _timer.Stop();
+        _stopPoll.Stop();
         _icon.Visible = false;
         _icon.Dispose();
         _collector.Dispose();

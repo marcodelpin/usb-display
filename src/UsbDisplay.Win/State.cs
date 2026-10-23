@@ -12,6 +12,9 @@ public static class Paths
 
     public static string StateDir =>
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "usb-display");
+
+    /// <summary>Written by scripts/install-tray.ps1 to ask the running tray to finish its frame and exit.</summary>
+    public static string StopRequestFile => Path.Combine(StateDir, "stop.request");
 }
 
 /// <summary>What scripts/probe-tray.ps1 reads: one JSON object rewritten atomically after every refresh.</summary>

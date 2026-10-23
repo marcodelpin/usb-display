@@ -60,13 +60,17 @@ powershell -ExecutionPolicy Bypass -File scripts\install-tray.ps1 -Zip C:\path\t
 ```
 
 The script stops this user's running tray (another user's tray on the same machine is left
-alone), extracts the zip to `%LOCALAPPDATA%\Programs\usb-display\`,
+alone): it asks the tray to finish the frame it is writing and exit, because a frame cut short can
+leave the panel's USB serial port stuck until the device is restarted; a tray that does not exit
+within 30 s is stopped right after its next refresh. It then extracts the zip to
+`%LOCALAPPDATA%\Programs\usb-display\`,
 sets the autostart value `UsbDisplayTray` under `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
 and starts the tray. A config that still equals the default of the previous build was never
 edited: it is moved aside so that the new build writes its own default. An edited config is kept.
 
-`scripts\uninstall-tray.ps1` stops this user's tray, removes the autostart value and moves the install
-folder aside (rename it back to restore). Config and state stay.
+`scripts\uninstall-tray.ps1` (the same as `install-tray.ps1 -Uninstall`) stops this user's tray the
+same way, removes the autostart value and moves the install folder aside (rename it back to
+restore). Config and state stay.
 
 ## Tray
 
